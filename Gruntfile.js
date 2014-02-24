@@ -470,6 +470,8 @@ module.exports = function( grunt ) {
 							paths = versionedPaths;
 						}
 
+						paths = [ "tests/unit/page" ];
+
 						return paths.map( function( path ) {
 							return "http://localhost:<%= connect.server.options.port %>/" + path;
 						});
